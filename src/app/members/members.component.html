@@ -1,11 +1,13 @@
-<button (click)="rankSort()">Sort</button>
+<small>List by Rank:    </small><button class="btn btn-default" (click)="rankSort()">By Rank</button>
+<h3 class="align">Member List</h3>
+<hr>
 <ul *ngFor="let member of members | async | rank: filter">
-  <div (click)="gotoDetail(member)">
+  <div (click)="gotoDetail(member)" *ngIf="currentRoute != '/admin'">
     <li>{{member.name}}</li>
+    <hr>
   </div>
   <div *ngIf="currentRoute === '/admin'">
     <h3>{{member.name}}</h3>
-    <hr>
     <app-edit-member [selectedMember]="member"></app-edit-member>
   </div>
 </ul>

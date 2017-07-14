@@ -1,0 +1,12 @@
+li {
+  text-align: center;
+  text-decoration: underline;
+}
+
+li:hover {
+  cursor: grab;
+}
+
+.align {
+  text-align: center;
+}

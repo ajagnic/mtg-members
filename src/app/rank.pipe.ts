@@ -15,7 +15,7 @@ export class RankPipe implements PipeTransform {
     if (filter === 'rank') {
       output = input.sort(function (a, b) {
         return a.rank - b.rank;
-      })
+      });
     } else {
       output = input;
     }

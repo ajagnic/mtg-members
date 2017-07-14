@@ -31,6 +31,7 @@ export class MembersComponent implements OnInit {
     } else {
       this.filter = 'inherit';
     }
+    console.log(this.filter);
   }
 
 }

@@ -1,0 +1,8 @@
+a {
+  color: grey;
+}
+
+.admin:hover {
+  cursor: none;
+  text-decoration: none;
+}

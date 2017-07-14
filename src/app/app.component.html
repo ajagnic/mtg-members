@@ -1,7 +1,23 @@
-<a (click)="gotoHome()">Home</a>
-<a (click)="gotoMembers()">Members</a>
-<a (click)="gotoAbout()">About</a>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div class="navbar-brand">
+        <h5 (click)="gotoHome()">MTG Members</h5>
+      </div>
+    </div>
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a (click)="gotoMembers()">Members</a></li>
+    <li role="presentation"><a (click)="gotoAbout()">About</a></li>
+  </ul>
+</div>
+</nav>
+
 <router-outlet></router-outlet>
+
 <footer>
-  <a (click)="gotoAdmin()">Admin</a>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+      <a class="admin" (click)="gotoAdmin()">Admin</a>
+    </div>
+  </nav>
 </footer>

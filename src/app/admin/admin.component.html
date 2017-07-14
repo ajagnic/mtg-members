@@ -1,6 +1,4 @@
-<div>
-  <app-members></app-members>
-</div>
+<h3>New Member Form: </h3>
 <div>
   <label>Name: </label>
   <input #newName>
@@ -17,4 +15,10 @@
   <label>Deck: </label>
   <input #newDeck>
 </div>
+<br>
 <button (click)="submitForm(newName.value, newLocation.value, newRank.value, newDeck.value); newName.value=''; newLocation.value=''; newRank.value=''; newDeck.value='';">Add</button>
+<hr><hr>
+<div>
+  <app-members></app-members>
+</div>
+<br><br><br><br><br>
