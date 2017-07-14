@@ -22,4 +22,14 @@ export class MemberService {
     return this.database.object('members/' + memberId);
   }
 
+  updateMember(updatedMember) {
+    const memberEntry = this.getMemberById(updatedMember.$key);
+    memberEntry.update({
+      name: updatedMember.name,
+      location: updatedMember.location,
+      rank: updatedMember.rank,
+      deck: updatedMember.deck
+    });
+  }
+
 }

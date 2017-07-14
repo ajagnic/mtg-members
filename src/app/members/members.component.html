@@ -5,6 +5,6 @@
     <div *ngIf="currentRoute === '/admin'">
       <h3>{{member.name}}</h3>
       <hr>
-      <app-edit-member></app-edit-member>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
   </ul>
