@@ -23,7 +23,7 @@ export class MemberService {
   }
 
   updateMember(updatedMember) {
-    const memberEntry = this.getMemberById(updatedMember.$key);
+    let memberEntry = this.getMemberById(updatedMember.$key);
     memberEntry.update({
       name: updatedMember.name,
       location: updatedMember.location,
@@ -32,4 +32,8 @@ export class MemberService {
     });
   }
 
+  deleteMember(memberDelete) {
+    let memberEntry = this.getMemberById(memberDelete.$key);
+    memberEntry.remove();
+  }
 }
