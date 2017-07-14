@@ -8,6 +8,13 @@
 ## Specs
 Spec | Input | Output | Description
 --- | --- | --- | ---
+User can view list of all current members | 'Members' | *List returned | Displays basic list of member names
+User can click members name for detail page | 'Adrian A.' | 'Rank: 1, Deck: BW' | Member detail page displays main information about that member
+User can sort member list | 'Sort by Rank' | *List returned | Sorts member list by current ranking
+User can view About page | 'About' | *Text returned | Displays info behind website development
+Admin can edit all members | 'Edit Member' | 'AJ A.' | Updates that members info in database
+Admin can add new member | 'Add' | 'Ally' | Adds new member to database
+Admin can delete member | 'Delete' | 'Ally' | Deletes member from database
 
 ## Installation
 * Run 'npm install' and 'bower install' to load dependencies.
