@@ -13,6 +13,7 @@ import { Router } from '@angular/router';
 export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filter = 'inherit';
 
   constructor(public memberService: MemberService, public router: Router) { }
 
@@ -22,6 +23,14 @@ export class MembersComponent implements OnInit {
 
   gotoDetail(member) {
     this.router.navigate(['members', member.$key]);
+  }
+
+  rankSort() {
+    if (this.filter === 'inherit') {
+      this.filter = 'rank';
+    } else {
+      this.filter = 'inherit';
+    }
   }
 
 }
