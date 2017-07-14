@@ -1,0 +1,8 @@
+  <ul *ngFor="let member of members | async">
+    <div (click)="gotoDetail(member)">
+      <li>{{member.name}}</li>
+      <li>{{member.location}}</li>
+      <li>{{member.rank}}</li>
+      <li>{{member.deck}}</li>
+    </div>
+  </ul>

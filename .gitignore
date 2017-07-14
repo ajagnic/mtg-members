@@ -7,6 +7,10 @@
 
 # dependencies
 /node_modules
+/bower_components
+
+# Firebase Creds
+/src/api-keys.ts
 
 # IDEs and editors
 /.idea

@@ -1,0 +1,17 @@
+{ "members": [{
+  "name": "Adrian Agnic",
+  "location": "Portland, OR",
+  "rank": "1",
+  "deck": "BW"
+  }, {
+  "name": "Joe Somethin",
+  "location": "Portland, OR",
+  "rank": "2",
+  "deck": "RG"
+  }, {
+  "name": "Jared Luedtke",
+  "location": "Nowhere, Idaho",
+  "rank": "0",
+  "deck": "Unknown"
+  }]
+}
