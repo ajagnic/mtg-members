@@ -12,7 +12,8 @@ import { Router } from '@angular/router';
 })
 export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
-
+  currentRoute: string = this.router.url;
+  
   constructor(public memberService: MemberService, public router: Router) { }
 
   ngOnInit() {

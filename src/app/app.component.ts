@@ -20,4 +20,8 @@ export class AppComponent {
   gotoMembers() {
     this.router.navigate(['members']);
   }
+
+  gotoAdmin() {
+    this.router.navigate(['admin']);
+  }
 }

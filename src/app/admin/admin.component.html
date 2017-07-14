@@ -1,0 +1,20 @@
+<div>
+  <app-members></app-members>
+</div>
+<div>
+  <label>Name: </label>
+  <input #newName>
+</div>
+<div>
+  <label>Location: </label>
+  <input #newLocation>
+</div>
+<div>
+  <label>Rank: </label>
+  <input #newRank>
+</div>
+<div>
+  <label>Deck: </label>
+  <input #newDeck>
+</div>
+<button (click)="submitForm(newName.value, newLocation.value, newRank.value, newDeck.value); newName.value=''; newLocation.value=''; newRank.value=''; newDeck.value='';">Add</button>

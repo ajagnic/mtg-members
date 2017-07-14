@@ -1,8 +1,10 @@
   <ul *ngFor="let member of members | async">
     <div (click)="gotoDetail(member)">
       <li>{{member.name}}</li>
-      <li>{{member.location}}</li>
-      <li>{{member.rank}}</li>
-      <li>{{member.deck}}</li>
+    </div>
+    <div *ngIf="currentRoute === '/admin'">
+      <h3>{{member.name}}</h3>
+      <hr>
+      <app-edit-member></app-edit-member>
     </div>
   </ul>
