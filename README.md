@@ -17,10 +17,18 @@ Admin can add new member | 'Add' | 'Ally' | Adds new member to database
 Admin can delete member | 'Delete' | 'Ally' | Deletes member from database
 
 ## Installation
-* Run 'npm install' and 'bower install' to load dependencies.
-  * Install Node.js and TypeScript if not installed already
+* Go-to <a href="https://github.com/ajagnic/address-book">GitHub</a>
+* Clone repository on to your machine (git clone www.example.code)
+* Navigate to the project directory with a terminal and run "npm install"
+* Do the same thing again, except with "bower install" 
+* Install Node.js and TypeScript if not installed already
+* Create 'api-keys.ts' file in src/app/
+* Api-Keys should contain: 
+  * export var masterFirebaseConfig = { apiKey: "XXXX", authDomain: "XXXX", databaseURL: "XXXX", projectId: "XXXX", storageBucket: "XXXX", messagingSenderId: "XXXX" }
+  * Replace "XXXX" with your information
 * Locate package.json file for angular commands.
 * 'ng serve' will run the local server (local: 4200)
+* Log Contributions
 
 ## Technologies
 * HTML
