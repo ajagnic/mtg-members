@@ -22,10 +22,11 @@ Admin can delete member | 'Delete' | 'Ally' | Deletes member from database
 * Navigate to the project directory with a terminal and run "npm install"
 * Do the same thing again, except with "bower install" 
 * Install Node.js and TypeScript if not installed already
+* Create a new firebase project at <a href="https://firebase.google.com/">Firebase</a>
 * Create 'api-keys.ts' file in src/app/
 * Api-Keys should contain: 
   * export var masterFirebaseConfig = { apiKey: "XXXX", authDomain: "XXXX", databaseURL: "XXXX", projectId: "XXXX", storageBucket: "XXXX", messagingSenderId: "XXXX" }
-  * Replace "XXXX" with your information
+  * Replace "XXXX" with your information from firebase
 * Locate package.json file for angular commands.
 * 'ng serve' will run the local server (local: 4200)
 * Log Contributions
